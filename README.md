@@ -1,1 +1,1 @@
-https://karanamrahul.github.io/rahulkaranam.github.io/
+https://karanamrahul.github.io
