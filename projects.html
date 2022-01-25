@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129146418-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-129146418-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="description" content="My personal webpage">
+    <meta name="keywords" content="point cloud, cilantro, SLAM, 3D reconstruction, 3D vision, perception, registration, non-rigid">
+    <meta name="author" content="Rahul Karanam">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Karanam</title>
+    <link href="style/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div id="body_container">
+        <script src="generate_header.js"></script>
+
+        <script>
+            document.getElementById("projects").style.color = "white";
+        </script>
+
+        <div id="page">
+            <div id="content_full">
+                <div id="topology_registration" class="post">
+                    <h2 class="title">
+                        Musketeers: Autonomous pickup and delivery fleet
+                    </h2>
+                    <div class="entry">
+                        <p>
+                            <img class="img_w_30 img_float_right" src="images/activity_musky.jpg" alt="Topology-aware registration overview" /> In this project, we develop a multi-robot(20) autonomous delivery framework, that works with husky robots from
+                            ClearPath robotics, in a simulation environment. The robots called "Musky" could be access delivery and pickup locations via command line inputs and/or with a Graphical User Interface (GUI) , where they can be made to traverse
+                            to a preset location to pick up an order from a restaurant and will deliver it to a preset delivery location. Our proposed Robotic delivery system consists of a fleet of husky robots parked at multiple base stations, Where
+                            each base station is provided with a unique Base ID. The purpose of each station is to charge robots and act as a fulfillment center to process the order. Upon receiving the orders from customers, Our advanced Task Planner
+                            algorithms take care of assigning delivery jobs to available Musketeers with sufficient charge to fulfill the order. Upon fulfillment of the order to the destination, The robot’s destination location becomes the new source
+                            location to process the new order. These operations are further continued and planned according to the task planner. We utilised ROS "move_base" framework for the navigation of the Musketeers to reach destination location.We
+                            have used ROS "gmapping" package to create the local and global cost maps along with detecting obstacles. We developed multiple interfaces in order to interact with the user using kivy for creating the GUI and CLI for command
+                            line input. This project is being developed using agile methodologies and test driven development. For more information about this project can be accessed at the github repository.
+                        </p>
+                        <h3>References:</h3>
+                        <p class="indent">
+                            <span class="bold">Musketeers: Autonomous pickup and delivery fleet</span> [
+                            <a href="https://drive.google.com/file/d/1M1FodIeb_yLv4JwdbofX3ztwyTm6bGPM/view?usp=sharing">pdf</a>] [
+                            <a href="https://drive.google.com/file/d/1DYCjtVKh_N355wW-lCqWUxPlOrV-pOAf/view?usp=sharing">ppt</a>][
+                            <a href="https://github.com/sumedhreddy90/MusketeersDeliveryFramework">github</a>]
+                            <br/> Rahul Karanam, Sumedh Koppuala,Pratik Acharya
+                            <span class="bolditalics">ENPM808X 2021</span>
+                        </p>
+                        <p>
+                            <img class="img_w_100 img_float" src="images/ll.png" alt="activity diagram" />
+                        </p>
+                    </div>
+                </div>
+                <div id="cilantro" class="post">
+                    <h2 class="title">
+                        <span class="tt">Modelling and Control </span>: Robotics Projects focussed on ROS , Control Systems and Planning.
+                    </h2>
+                    <div class="entry">
+                        <ul>
+
+                            <img class="img_w_50 img_float_right" src="images/1.jpg" alt="Connected component extraction" />
+
+                            <span class="bold">1. KitchenBot:PickPack -</span> Pick Pack which is a 6 axis UR5 robot which can assist restaurants by packaging their food products or helping out in the cooking process.The goal of this project is to design
+                            and simulate a six axis robot to assist food packaging and processing used in food industries such as restaurants.
+
+                            <li>
+                                <span class="bold">Tech Stack:</span> We used Move it for planning our UR5 robot to perform the pick and place operations. Validation of the forward and inverse kinematics was done using sympy and KDL (C++ Package).UR5
+                                Robot Specifications: We have chosen UR5 ( Universal Robots ) robotic arm to perform pick-and place tasks. The base of the 6-axis UR5 robot is clamped on to the above mentioned robot base. The commands were given using
+                                Moveit group interface (C++) to the robot. Using the OMPL Planner we have planned the trajectory of the robot given the destination pose.PID controller was implemented to control the joints and visualization of the sensor
+                                data was done using RQT and Rviz. Please refer to the below report and github for more information.
+
+
+
+                                <!--                             <br>
+                            <img class = "img_w_50 img_float" src="images/conn_comp.png" alt="Connected component extraction"/> -->
+                            </li>
+                            <h3>References:</h3>
+                            <p class="indent">
+                                <span class="bold">KitchenBot:PickPack</span> [
+                                <a href="style/662_Final_Project2.pdf">pdf</a>] [
+                                <a href="https://docs.google.com/presentation/d/1Uum-nZE70OGvvWTYOP9OPSmbYIG5R9U_QYHPMrI73R0/edit?usp=sharing">ppt</a>][
+                                <a href="https://github.com/karanamrahul/KitchenRobot">github</a>]
+                                <br/> Rahul Karanam, Sumedh Koppuala
+                                <span class="bolditalics">ENPM662 2021</span>
+                            </p>
+
+                            <span class="bold">2. Inverse Kinematics Solver for 6 DOF manipulator:</span> This API will be used for Solving Inverse Kinematics of robot manipulator. It is currently used for only manipulators having six degree of freedom.
+                            The input coordinates [X,Y,Z] are send as an input to the IK solver to get the output_joint_angles. We have created the FK solver in order to check for robot arm constraints are in the bias range or not. We use FK_solver in
+                            order to check for the output_bias and to cancel out singularities of the robot arm. This software will compute the trajectory when you input your desired location which will return a vector of all the joint angles for the
+                            robot. We simulate our trajectory using matplotlib for all the output coordinates covered till the desired location. This IK solver can be integrated with any six degree of robot manipulator.
+                            <br>
+                            <h3>References:</h3>
+                            <p class="indent">
+                                <span class="bold">Inverse Kinematics Solver for 6 DOF manipulator</span> [
+                                <a href="style/IK_solver_doxygen_document.pdf">pdf</a>] [
+                                <a href="style/Class_Diagram_V_3.png">UML</a>][
+                                <a href="https://github.com/karanamrahul/ENPM808X_Midterm_Manipulator_IKSolver">github</a>]
+                                <br/> Rahul Karanam, Sumedh Koppula ,
+                                <span class="bolditalics">ENPM808X 2021</span>
+                            </p>
+
+
+
+                            <!-- <span class="bold">Geometric registration:</span> multiple generic ICP instances for <span class="italics">rigid</span> and <span class="italics">non-rigid</span> (by means of a robustly regularized, locally rigid warp field) point set registration under a flexible combined point-to-point and point-to-plane metric data term that support custom correspondence search methods (a generic, arbitrary feature space kd-tree based one, as well as a fast projective association based one for the 3D case are provided) -->
+                            <span class="bold">3. Design and Simulate a LQR and LQG controller for double inverted pendulum:</span> Implementation of LQR and LQG controller in Matlab for controlling a crane with two suspended pendulums.
+                            <br>
+
+                            <!-- <br>
+                            <img class = "img_w_50 img_float" src="images/fusion.png" alt="Point fusion based reconstruction"/> -->
+
+                            <h3>References:</h3>
+                            <p class="indent">
+                                <span class="bold"> Design and Simulate a LQR and LQG controller for double inverted pendulum</span> [
+                                <a href="style/ENPM667_Final_Project.pdf">report</a>][
+                                <a href="https://github.com/karanamrahul/Control-of-Double-pendulum-using-LQR-and-LQG">github</a>]
+                                <br/> Rahul Karanam, Pratik Acharya ,
+                                <span class="bolditalics">ENPM667 2021</span>
+                            </p>
+
+                            <span class="bold">4. Double Q-PID:</span> Control of mobile robots using Double Q-PID algorithm.
+
+                            <li>
+                                This project is the implementation of the paper by Ignacio Carlucho on "Double Q-learning algorithm for mobile robot control". An expert agent- based system, based on a reinforcement learning agent, for self-adapting multiple low-level PID controllers
+                                in mobile robots. We are demonstrating our implementation by using husky and hector quadrotor. We have presented a technical report on this paper which you can find it below.
+                            </li>
+                            <img class="img_w_100 img_float" src="images/kk.png" alt="Non-rigid point cloud registration" />
+                            <h3>References:</h3>
+                            <p class="indent">
+                                <span class="bold">Double Q-PID algorithm for mobile robot control</span> [
+                                <a href="https://www.sciencedirect.com/science/article/pii/S0957417419304749">pdf</a>] [
+                                <a href="style/DoubleQPID_report.pdf">report</a>][
+                                <a href="https://github.com/karanamrahul/DoubleQPID-Algorithm">github</a>]
+                                <br/> Rahul Karanam, Sumedh Koppula ,
+                                <span class="bolditalics">ENPM667 2021</span>
+                            </p>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <div id="box_detection_fitting" class="post">
+                    <h2 class="title">
+                        Deep Learning
+                    </h2>
+                    <h3>Text2Py: A transformer based model which generates python snippets given natural language ( English ) as input with proper white space indentations.</h3>
+                    <div class="entry">
+                        <p>
+                            Generating Machine code from Human Languages is a challenging problem. In this project I have used Neural Transformer to generate Python Source Code from a given English Description. I have used a custom dataset where each record starts with English Description
+                            line starting with # character followed by python code. The dataset is available in link below:We develop a pipeline for creating different tokenizer for english and python's indentations. After the preprocessing of the dataset
+                            , it is then divided into question-answers pairs (English and Python code). We used a encoder-decoder architecture based transformer which uses a special type of attention mechanism called self-attention.The word embeddings
+                            of the input sequence are computed simultaneously along with positional encoding to get the positional information.The encoder takes the english words, create embeddings (pre-trained Glove embedding is used) and then pass through
+                            all the encoder transformer layers to get the encoded output which is passed to decoder.For Decoder, the standard architecture is modified to include Output Type as one of input. So, inputs used are [ Output Python Token ,
+                            Output Python Token Type , Position] , the embedding are created for all these three and then passed through masked multihead attention and Layer normalization layers, which is then combined with encoder output and passed through
+                            the multihead attention layers and layer normalization layers followed by Feed Forward layer and then softmax is applied to get the final output.I have used Adam optimizer and cross-entropy loss to measure the performance.This
+                            is our best score ( BLEU ) after training for several epochs -| Test Loss: 0.125 | Test PPL: 1.133 |.
+                        </p>
+
+
+
+                        <h3>Source code:</h3>
+                        <p class="indent">
+                            Text2Py python code generator is available <a href="https://github.com/karanamrahul/Natural-Language-Processing-Projects/tree/main/Text2Py">here</a>.
+                        </p>
+                        <h3>Dataset:</h3>
+                        <p class="indent">
+                            A customized dataset of 4600+ examples of English Text to Python is available <a href="https://github.com/karanamrahul/Natural-Language-Processing-Projects/tree/main/Text2Py/Dataset">here</a>.
+                        </p>
+                        <h3>References:</h3>
+                        <p class="indent">
+                            <span class="bold">Text2Py: A transformer based model which generates python snippets given natural language as input</span> [
+                            <a href="https://rahulkaranam777.medium.com/transformers-rising-from-the-ashes-of-rnn-lstm-35619d1a1bf6">blog</a>] [
+                            <a href="style/Rahul Karanam END Phase 1 Completion Certificate.pdf">course</a>]
+                            <br/> Rahul Karanam
+                            <span class="bolditalics">END 2021</span>
+                        </p>
+                        <br>
+                        <img class="img_w_100 img_float" src="images/Untitled design(1).png" alt="Non-rigid point cloud registration" />
+
+                    </div>
+                    <h3>Autonomous RC car using raspberry Pi3.</h3>
+                    <div class="entry">
+                        <p>
+                            <img class="img_w_30 img_float_right" src="images/back.jpg" alt="Topology-aware registration overview" />A scaled down version of a self-driving car is being built using neural networks. • This system uses l293d for controlling
+                            the motors, Pi camera for taking photos and providing inputs to the neural network. • Trained the model using a supervised learning algorithm to learn the optimized steering angle with two hidden layers. • Ultrasonic sensors
+                            are used for obstacle avoidance; Raspberry pi is used as a server to take the inputs and predict the outcome after training through a neural network. • We use Opencv to optimize the weights by backpropagating the gradients.
+                            Once we get the optimized weights, we can apply it to the model then the car can run autonomously.
+                        </p>
+                        <h3>References:</h3>
+                        <p class="indent">
+                            <span class="bold">Autonomous RC Car : A scaled down version of a self-driving car.</span> [
+                            <a href="https://drive.google.com/drive/folders/1CSSRRHRLXUHUOWioqCUynzdXFRYdjhv6?usp=sharing">photos</a>]
+                            <br/> Rahul Karanam
+                            <span class="bolditalics">CITD 2017</span>
+                            <br>
+                            <img class="img_w_30 img_float" src="images/front.jpg" style="transform:rotate(270deg);" alt="Non-rigid point cloud registration" />
+                        </p>
+                    </div>
+                </div>
+                <div id="spatial_relations" class="post">
+                    <h2 class="title">
+                        Undergraduate Capstone : Design and Development of Unmanned Ground Vehicle for Surveillance
+                    </h2>
+                    <div class="entry">
+                        <p>
+                            <img class="img_w_30 img_float_right" src="images/assem.png" alt="Spatial relations grounding" /> A four-articulated legged UGV with 3 DOF Pan tilt camera used for surveillance in a remote area. The Vehicle has four articulated
+                            legs which can operate on any terrain, can climb stairs and a 3 DOF Pan tilt camera used for visual support and can carry payload using the robotic arm from a shorter distance. It is controlled through a wireless joystick which
+                            is attached with an in-built display for visual scope. The Project can be further developed by collaborating with drones for vision and path guidance to access inaccessible terrain and environments.
+                        </p>
+                        <h3>References:</h3>
+                        <p class="indent">
+                            <span class="bold">Design and Development of Unmanned Ground Vehicle for Surveillance</span> [
+                            <a href="https://drive.google.com/drive/folders/1bOeYJUD8o37_FYGV_K5lmIe7avK6pzT0?usp=sharing">photos</a>] [
+                            <a href="https://drive.google.com/file/d/1NW33QJsJzZh9uiFDgCmtf4_YZgftkxvo/view?usp=sharing">demo</a>]
+                            <br/> Rahul Karanam, T.Muthuramalingam
+                            <span class="bolditalics">SRM  2018</span>
+                        </p>
+                        <p>
+                            <img class="img_w_100 img_float" src="images/ugv5.jpg" alt="Spatial relations tracking" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!-- end #page -->
+
+        <script src="generate_footer.js"></script>
+    </div>
+    <!-- end #body_container -->
+
+</body>
+
+</html>
